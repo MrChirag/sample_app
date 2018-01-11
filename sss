@@ -1,0 +1,125 @@
+= ..lleennggtthh
+
+(from gem activerecord-5.1.4)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  CCoolllleeccttiioonnPPrrooxxyy
+------------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------------
+
+Returns the size of the collection calling size on the target. If the
+collection has been already loaded, length and size are equivalent. If not and
+you are going to need the records anyway this method will take one less query.
+Otherwise size is more efficient.
+
+  class Person < ActiveRecord::Base
+    has_many :pets
+  end
+
+  person.pets.length # => 3
+  # executes something like SELECT "pets".* FROM "pets" WHERE "pets"."person_id" = 1
+
+  # Because the collection is loaded, you can
+  # call the collection with no additional queries:
+  person.pets
+  # => [
+  #       #<Pet id: 1, name: "Fancy-Fancy", person_id: 1>,
+  #       #<Pet id: 2, name: "Spook", person_id: 1>,
+  #       #<Pet id: 3, name: "Choo-Choo", person_id: 1>
+  #    ]
+
+
+(from gem activerecord-5.1.4)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RReessuulltt
+------------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------------
+
+Returns the number of elements in the rows array.
+
+
+(from gem concurrent-ruby-1.0.5)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  JJaavvaaNNoonnCCoonnccuurrrreennttPPrriioorriittyyQQuueeuuee
+------------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------------
+
+@!macro priority_queue_method_length
+
+
+(from gem concurrent-ruby-1.0.5)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RRuubbyyNNoonnCCoonnccuurrrreennttPPrriioorriittyyQQuueeuuee
+------------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------------
+
+@!macro priority_queue_method_length
+
+
+(from gem concurrent-ruby-1.0.5)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  JJaavvaaTThhrreeaaddPPoooollEExxeeccuuttoorr
+------------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------------
+
+@!macro thread_pool_executor_attr_reader_length
+
+
+(from gem concurrent-ruby-1.0.5)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RRuubbyyTThhrreeaaddPPoooollEExxeeccuuttoorr
+------------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------------
+
+@!macro thread_pool_executor_attr_reader_length
+
+
+(from gem concurrent-ruby-1.0.5)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  AAbbssttrraaccttSSttrruucctt
+------------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------------
+
+@!macro [attach] struct_length
+
+  Returns the number of struct members.
+
+  @return [Fixnum] the number of struct members
+
+
+(from gem nokogiri-1.8.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  NNooddeeSSeett
+------------------------------------------------------------------------------
+  length
+
+------------------------------------------------------------------------------
+
+Get the length of the node set
+
+
+(from gem rack-2.0.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RRaacckk::::RReessppoonnssee
+------------------------------------------------------------------------------
+
+
+(from gem sprockets-3.7.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  AAsssseett
+------------------------------------------------------------------------------
+  length()
+
+------------------------------------------------------------------------------
+
+Public: Returns Integer length of source.
+
+
+(from gem websocket-driver-0.6.5)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  WWeebbSSoocckkeett::::DDrriivveerr::::HHyybbii::::FFrraammee
+------------------------------------------------------------------------------
+
+

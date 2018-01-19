@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
     
 
   def hello
-  	rander html: "Hello Welcome..."
+  	rander html: "Hello Welcome To My World..."
   end      
 end
